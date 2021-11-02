@@ -8,17 +8,10 @@ public class Bullet : MonoBehaviour
     [SerializeField] Rigidbody myRb;
     [SerializeField] public int damagePower;
 
-    // Start is called before the first frame update
     void Start()
     {
         Run();
         Destroy(gameObject, 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void Run()
